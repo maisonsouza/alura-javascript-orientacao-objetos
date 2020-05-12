@@ -23,7 +23,9 @@ contaCorrenteJose.depositar(170);
 const valorSacado = contaCorrenteMaison.sacar(50);
 console.log(valorSacado)
 contaCorrenteMaison.sacar(80);
-contaCorrenteMaison.transferir(25,contaCorrenteJose)
+let valor = 25;
+contaCorrenteMaison.transferir(valor,contaCorrenteJose)
+console.log("valor",valor)
 
 console.log(cliente1);
 console.log(cliente2);
