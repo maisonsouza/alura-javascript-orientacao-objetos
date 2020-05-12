@@ -8,5 +8,8 @@
    - Adicionando comportamentos.  
    
 > Aula03
-   - Modularizando código.    
+   - Modularizando código.
+
+> Aula04
+   - Acessando atributos privados.        
 

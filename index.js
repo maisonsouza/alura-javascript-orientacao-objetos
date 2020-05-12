@@ -26,8 +26,7 @@ contaCorrenteMaison.sacar(80);
 let valor = 25;
 contaCorrenteMaison.transferir(valor,contaCorrenteJose)
 console.log("valor",valor)
-
 console.log(cliente1);
 console.log(cliente2);
 console.log(contaCorrenteMaison);
-console.log(contaCorrenteJose);
+console.log(contaCorrenteJose.cliente.getSazx);
