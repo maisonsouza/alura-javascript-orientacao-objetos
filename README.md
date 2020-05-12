@@ -6,4 +6,7 @@
    
 > Aula02
    - Adicionando comportamentos.  
+   
+> Aula03
+   - Modularizando código.    
 
