@@ -1,13 +1,14 @@
 export class ContaCorrente {
     agencia;
-    #saldo = 0;
+    cliente;
+    _saldo = 0;
 
     sacar(valor) {
         console.log("Sacando", valor, "reais ... ")
-        if (this.#saldo >= valor) {
-            this.#saldo -= valor;
+        if (this._saldo >= valor) {
+            this._saldo -= valor;
             console.log("Saque realizado com sucesso");
-            console.log("Saldo = R$", this.#saldo, "\n");
+            console.log("Saldo = R$", this._saldo, "\n");
             return valor;
         } else {
             console.log("Saldo em conta insuficiente para o saque\n");
@@ -19,9 +20,16 @@ export class ContaCorrente {
         if (valor <= 0) {
             return
         } else {
-            this.#saldo += valor;
+            this._saldo += valor;
             console.log("Depósito realizado com sucesso");
-            console.log("Saldo = R$", this.#saldo, "\n");
+            console.log("Saldo = R$", this._saldo, "\n");
         }
+    }
+
+    transferir(valor,contaDestino){
+        console.log("Transferindo ",valor, 'de' , this, 'para',contaDestino )
+        const valorSacado = this.sacar(valor);
+        contaDestino.depositar(valorSacado);
+        console.log("Transferência efetuada com sucesso");
     }
 }
