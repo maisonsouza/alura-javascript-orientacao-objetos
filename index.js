@@ -15,6 +15,7 @@ console.log(valorSacado);
 contaCorrenteMaison.sacar(80);
 
 console.log(cliente1);
-console.log(cliente2.cpf);
+console.log(cliente2);
 console.log(contaCorrenteMaison);
 console.log(contaCorrenteJose);
+console.log(ContaCorrente.numeroDeContas);
